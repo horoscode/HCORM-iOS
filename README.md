@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/horoscode/HCORM-iOS.png?label=ready&title=Ready)](https://waffle.io/horoscode/HCORM-iOS)
 HCORM-iOS
 =========
 
