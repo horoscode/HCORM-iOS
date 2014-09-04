@@ -11,8 +11,11 @@ Coming Soon
 Coming Soon
 
 ## Teams
-- Project Leader : [Adit](https://github.com/freeskys)
-- Project Leader 2 : -
+- Project Leader : [Harditya Ramadhan](https://github.com/freeskys)
+- Co-Project Leader : -
+
+## Contributors
+- Coming Soon
 
 ###License
 MIT License
