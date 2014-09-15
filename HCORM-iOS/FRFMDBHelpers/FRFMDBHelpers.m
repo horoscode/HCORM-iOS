@@ -7,6 +7,11 @@
 
 #import "FRFMDBHelpers.h"
 
+// Internal Import
+#import "HCORM.h"
+
+// External Import
+
 @implementation FRFMDBHelpers
 
 + (NSString *)copyDatabaseToDocumentFolderWithDatabaseName:(NSString *)databaseName andExtension:(NSString *)extension
@@ -44,6 +49,9 @@
         NSLog(@"%@.%@ - Folder: %@", databaseName, extension, folder);
         NSLog(@"Resource Path: %@", resourcePath);
         NSLog(@"DB Path: %@", dbPath);
+        
+        // Set database path
+        [HCORM setDatabasePath:dbPath];
         
         // Copy database to document folder
         [fileManager copyItemAtPath:resourcePath

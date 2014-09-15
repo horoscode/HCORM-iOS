@@ -36,4 +36,9 @@ static NSString *databasePath;
     return databasePath;
 }
 
++ (void)setDatabasePath:(NSString *)path
+{
+    databasePath = path;
+}
+
 @end

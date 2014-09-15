@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8ED74C1B9BE04E0E8C89619D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A2A7A5E2184035843A8173 /* libPods.a */; };
+		C90433C619C5251900EA699A /* HCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C90433C519C5251900EA699A /* HCDatabase.m */; };
 		C949DAC119BEB44800BBB90A /* FRFMDBHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C949DAC019BEB44800BBB90A /* FRFMDBHelpers.m */; };
 		C9AF2ED719B8E1EF00F1DAEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF2ED619B8E1EF00F1DAEC /* Foundation.framework */; };
 		C9AF2ED919B8E1EF00F1DAEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF2ED819B8E1EF00F1DAEC /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		95A2A7A5E2184035843A8173 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C148F9F81DDC44F0AC1A1298 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C90433C419C5251900EA699A /* HCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCDatabase.h; path = HCORM/HCDatabase.h; sourceTree = "<group>"; };
+		C90433C519C5251900EA699A /* HCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCDatabase.m; path = HCORM/HCDatabase.m; sourceTree = "<group>"; };
 		C949DABF19BEB44800BBB90A /* FRFMDBHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFMDBHelpers.h; sourceTree = "<group>"; };
 		C949DAC019BEB44800BBB90A /* FRFMDBHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFMDBHelpers.m; sourceTree = "<group>"; };
 		C9AF2ED319B8E1EF00F1DAEC /* HCORM-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCORM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +179,8 @@
 		C9AF2F0819B8E25C00F1DAEC /* HCORM */ = {
 			isa = PBXGroup;
 			children = (
+				C90433C419C5251900EA699A /* HCDatabase.h */,
+				C90433C519C5251900EA699A /* HCDatabase.m */,
 				C9AF2F0519B8E25700F1DAEC /* HCORM.h */,
 				C9AF2F0619B8E25700F1DAEC /* HCORM.m */,
 				C9AF2F0C19B8EE3500F1DAEC /* HCModel.h */,
@@ -324,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9AF2F0E19B8EE3500F1DAEC /* HCModel.m in Sources */,
+				C90433C619C5251900EA699A /* HCDatabase.m in Sources */,
 				C9AF2F0719B8E25700F1DAEC /* HCORM.m in Sources */,
 				C949DAC119BEB44800BBB90A /* FRFMDBHelpers.m in Sources */,
 				C9AF2EE719B8E1EF00F1DAEC /* AppDelegate.m in Sources */,

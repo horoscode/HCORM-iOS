@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-// Internal Import
+//---- Internal Import -----
 #import "HCORM.h"
 
-// External Import
+//---- External Import -----
+// Load FMDB
+#import <FMDB/FMDB.h>
 
 @interface HCModel : NSObject
 
@@ -27,17 +29,17 @@
 /**
  * Get all data from database
  */
-- (HCModel *)all;
+- (FMResultSet *)all;
 
 /**
  * Get the first data
  */
-- (HCModel *)first;
+- (FMResultSet *)first;
 
 /**
  * Get data from database based on criterias.
  */
-- (HCModel *)findBy:(NSDictionary *)criterias;
+- (FMResultSet *)findBy:(NSDictionary *)criterias;
 
 /**
  * Delete data from database
@@ -45,5 +47,13 @@
 - (BOOL)destroy;
 
 //----- End CRUD -----
+
+//----- Tools -----
+- (FMDatabase *)initializeDatabase;
+//----- End Tools -----
+
+//----- Overidden Method -----
+- (NSString *)tableName;
+//----- End Overidden Method -----
 
 @end

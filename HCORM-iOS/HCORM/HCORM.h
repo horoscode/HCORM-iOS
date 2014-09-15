@@ -35,4 +35,9 @@
  */
 + (NSString *)databasePath;
 
+/**
+ * Set database path
+ */
++ (void)setDatabasePath:(NSString *)path;
+
 @end
