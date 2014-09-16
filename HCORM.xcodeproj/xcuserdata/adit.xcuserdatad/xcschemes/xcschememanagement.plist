@@ -4,25 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-FMDB.xcscheme</key>
+		<key>HCORM.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>30ED8AF7813E4D08B78AE1AE</key>
+		<key>C9AABC3219C7DD350062E250</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47CE5804C457454594B011B9</key>
+		<key>C9AABC4919C7DD360062E250</key>
 		<dict>
 			<key>primary</key>
 			<true/>

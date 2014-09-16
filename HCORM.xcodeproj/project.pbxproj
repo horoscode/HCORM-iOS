@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBC13055B7E94FC0AE02FE57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEAF159761045AFB4EC78A3 /* libPods.a */; };
+		C9AABC3919C7DD350062E250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3819C7DD350062E250 /* AppDelegate.swift */; };
+		C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3A19C7DD350062E250 /* MasterViewController.swift */; };
+		C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3C19C7DD350062E250 /* DetailViewController.swift */; };
+		C9AABC4019C7DD350062E250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AABC3E19C7DD350062E250 /* Main.storyboard */; };
+		C9AABC4219C7DD350062E250 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9AABC4119C7DD350062E250 /* Images.xcassets */; };
+		C9AABC4519C7DD350062E250 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AABC4319C7DD350062E250 /* LaunchScreen.xib */; };
+		C9AABC5119C7DD360062E250 /* HCORMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC5019C7DD360062E250 /* HCORMTests.swift */; };
+		C9B4415819C8170A00CEA4C9 /* FRFMDBHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B4415719C8170A00CEA4C9 /* FRFMDBHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9AABC4B19C7DD360062E250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9AABC2B19C7DD350062E250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9AABC3219C7DD350062E250;
+			remoteInfo = HCORM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		136D1A2C847441DC9DBC84ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C9AABC3319C7DD350062E250 /* HCORM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCORM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AABC3719C7DD350062E250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AABC3819C7DD350062E250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9AABC3A19C7DD350062E250 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		C9AABC3C19C7DD350062E250 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C9AABC3F19C7DD350062E250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9AABC4119C7DD350062E250 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9AABC4419C7DD350062E250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C9AABC4A19C7DD360062E250 /* HCORMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCORMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AABC4F19C7DD360062E250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AABC5019C7DD360062E250 /* HCORMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCORMTests.swift; sourceTree = "<group>"; };
+		C9B4415719C8170A00CEA4C9 /* FRFMDBHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRFMDBHelpers.swift; path = FRFMDBHelpers/FRFMDBHelpers.swift; sourceTree = "<group>"; };
+		CAEAF159761045AFB4EC78A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9AABC3019C7DD350062E250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC13055B7E94FC0AE02FE57 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AABC4719C7DD360062E250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27BA229A841B4A96B660DA59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAEAF159761045AFB4EC78A3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9AABC2A19C7DD350062E250 = {
+			isa = PBXGroup;
+			children = (
+				C9AABC3519C7DD350062E250 /* HCORM */,
+				C9AABC4D19C7DD360062E250 /* HCORMTests */,
+				C9AABC3419C7DD350062E250 /* Products */,
+				136D1A2C847441DC9DBC84ED /* Pods.xcconfig */,
+				27BA229A841B4A96B660DA59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9AABC3419C7DD350062E250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC3319C7DD350062E250 /* HCORM.app */,
+				C9AABC4A19C7DD360062E250 /* HCORMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9AABC3519C7DD350062E250 /* HCORM */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC5A19C7DD5C0062E250 /* FRFMDBHelpers */,
+				C9AABC3819C7DD350062E250 /* AppDelegate.swift */,
+				C9AABC3A19C7DD350062E250 /* MasterViewController.swift */,
+				C9AABC3C19C7DD350062E250 /* DetailViewController.swift */,
+				C9AABC3E19C7DD350062E250 /* Main.storyboard */,
+				C9AABC4119C7DD350062E250 /* Images.xcassets */,
+				C9AABC4319C7DD350062E250 /* LaunchScreen.xib */,
+				C9AABC3619C7DD350062E250 /* Supporting Files */,
+			);
+			path = HCORM;
+			sourceTree = "<group>";
+		};
+		C9AABC3619C7DD350062E250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC3719C7DD350062E250 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9AABC4D19C7DD360062E250 /* HCORMTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC5019C7DD360062E250 /* HCORMTests.swift */,
+				C9AABC4E19C7DD360062E250 /* Supporting Files */,
+			);
+			path = HCORMTests;
+			sourceTree = "<group>";
+		};
+		C9AABC4E19C7DD360062E250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC4F19C7DD360062E250 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9AABC5A19C7DD5C0062E250 /* FRFMDBHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9B4415719C8170A00CEA4C9 /* FRFMDBHelpers.swift */,
+			);
+			name = FRFMDBHelpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9AABC3219C7DD350062E250 /* HCORM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9AABC5419C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM" */;
+			buildPhases = (
+				2F903BE52F034C99802E022C /* Check Pods Manifest.lock */,
+				C9AABC2F19C7DD350062E250 /* Sources */,
+				C9AABC3019C7DD350062E250 /* Frameworks */,
+				C9AABC3119C7DD350062E250 /* Resources */,
+				0C3D151D04E949B3BD04188B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCORM;
+			productName = HCORM;
+			productReference = C9AABC3319C7DD350062E250 /* HCORM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9AABC4919C7DD360062E250 /* HCORMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9AABC5719C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORMTests" */;
+			buildPhases = (
+				C9AABC4619C7DD360062E250 /* Sources */,
+				C9AABC4719C7DD360062E250 /* Frameworks */,
+				C9AABC4819C7DD360062E250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9AABC4C19C7DD360062E250 /* PBXTargetDependency */,
+			);
+			name = HCORMTests;
+			productName = HCORMTests;
+			productReference = C9AABC4A19C7DD360062E250 /* HCORMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9AABC2B19C7DD350062E250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Horoscode;
+				TargetAttributes = {
+					C9AABC3219C7DD350062E250 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C9AABC4919C7DD360062E250 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C9AABC3219C7DD350062E250;
+					};
+				};
+			};
+			buildConfigurationList = C9AABC2E19C7DD350062E250 /* Build configuration list for PBXProject "HCORM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9AABC2A19C7DD350062E250;
+			productRefGroup = C9AABC3419C7DD350062E250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9AABC3219C7DD350062E250 /* HCORM */,
+				C9AABC4919C7DD360062E250 /* HCORMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9AABC3119C7DD350062E250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AABC4019C7DD350062E250 /* Main.storyboard in Resources */,
+				C9AABC4519C7DD350062E250 /* LaunchScreen.xib in Resources */,
+				C9AABC4219C7DD350062E250 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AABC4819C7DD360062E250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C3D151D04E949B3BD04188B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F903BE52F034C99802E022C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9AABC2F19C7DD350062E250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */,
+				C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */,
+				C9B4415819C8170A00CEA4C9 /* FRFMDBHelpers.swift in Sources */,
+				C9AABC3919C7DD350062E250 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9AABC4619C7DD360062E250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AABC5119C7DD360062E250 /* HCORMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9AABC4C19C7DD360062E250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9AABC3219C7DD350062E250 /* HCORM */;
+			targetProxy = C9AABC4B19C7DD360062E250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9AABC3E19C7DD350062E250 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AABC3F19C7DD350062E250 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9AABC4319C7DD350062E250 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AABC4419C7DD350062E250 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9AABC5219C7DD360062E250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9AABC5319C7DD360062E250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9AABC5519C7DD360062E250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136D1A2C847441DC9DBC84ED /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HCORM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9AABC5619C7DD360062E250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136D1A2C847441DC9DBC84ED /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HCORM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9AABC5819C7DD360062E250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HCORMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCORM.app/HCORM";
+			};
+			name = Debug;
+		};
+		C9AABC5919C7DD360062E250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HCORMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCORM.app/HCORM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9AABC2E19C7DD350062E250 /* Build configuration list for PBXProject "HCORM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9AABC5219C7DD360062E250 /* Debug */,
+				C9AABC5319C7DD360062E250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9AABC5419C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9AABC5519C7DD360062E250 /* Debug */,
+				C9AABC5619C7DD360062E250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9AABC5719C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9AABC5819C7DD360062E250 /* Debug */,
+				C9AABC5919C7DD360062E250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9AABC2B19C7DD350062E250 /* Project object */;
+}
