@@ -34,6 +34,34 @@
                ReferencedContainer = "container:HCORM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C9AABC3219C7DD350062E250"
+               BuildableName = "HCORM-Demo.app"
+               BlueprintName = "HCORM-Demo"
+               ReferencedContainer = "container:HCORM-Demo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C9AABC4919C7DD360062E250"
+               BuildableName = "HCORM-DemoTests.xctest"
+               BlueprintName = "HCORM-DemoTests"
+               ReferencedContainer = "container:HCORM-Demo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

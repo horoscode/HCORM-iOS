@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BBC13055B7E94FC0AE02FE57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEAF159761045AFB4EC78A3 /* libPods.a */; };
+		C943270119C8CAD100CBE4FD /* HCORM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943270019C8CAD100CBE4FD /* HCORM.swift */; };
+		C943270319C8CE6E00CBE4FD /* HCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943270219C8CE6E00CBE4FD /* HCSettings.swift */; };
 		C9AABC3919C7DD350062E250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3819C7DD350062E250 /* AppDelegate.swift */; };
 		C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3A19C7DD350062E250 /* MasterViewController.swift */; };
 		C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3C19C7DD350062E250 /* DetailViewController.swift */; };
@@ -30,7 +32,9 @@
 
 /* Begin PBXFileReference section */
 		136D1A2C847441DC9DBC84ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		C9AABC3319C7DD350062E250 /* HCORM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCORM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C943270019C8CAD100CBE4FD /* HCORM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCORM.swift; path = HCORM/HCORM.swift; sourceTree = "<group>"; };
+		C943270219C8CE6E00CBE4FD /* HCSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCSettings.swift; path = HCORM/HCSettings.swift; sourceTree = "<group>"; };
+		C9AABC3319C7DD350062E250 /* HCORM-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCORM-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AABC3719C7DD350062E250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AABC3819C7DD350062E250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9AABC3A19C7DD350062E250 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +42,7 @@
 		C9AABC3F19C7DD350062E250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9AABC4119C7DD350062E250 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9AABC4419C7DD350062E250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C9AABC4A19C7DD360062E250 /* HCORMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCORMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AABC4A19C7DD360062E250 /* HCORM-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HCORM-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AABC4F19C7DD360062E250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AABC5019C7DD360062E250 /* HCORMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCORMTests.swift; sourceTree = "<group>"; };
 		C9B4415719C8170A00CEA4C9 /* FRFMDBHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRFMDBHelpers.swift; path = FRFMDBHelpers/FRFMDBHelpers.swift; sourceTree = "<group>"; };
@@ -72,6 +76,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C94326FC19C8CA3E00CBE4FD /* HCORM */ = {
+			isa = PBXGroup;
+			children = (
+				C943270019C8CAD100CBE4FD /* HCORM.swift */,
+				C943270219C8CE6E00CBE4FD /* HCSettings.swift */,
+			);
+			name = HCORM;
+			sourceTree = "<group>";
+		};
+		C94326FD19C8CA9700CBE4FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC3A19C7DD350062E250 /* MasterViewController.swift */,
+				C9AABC3C19C7DD350062E250 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C94326FE19C8CA9E00CBE4FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9AABC3E19C7DD350062E250 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C94326FF19C8CAA300CBE4FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		C9AABC2A19C7DD350062E250 = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +123,8 @@
 		C9AABC3419C7DD350062E250 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9AABC3319C7DD350062E250 /* HCORM.app */,
-				C9AABC4A19C7DD360062E250 /* HCORMTests.xctest */,
+				C9AABC3319C7DD350062E250 /* HCORM-Demo.app */,
+				C9AABC4A19C7DD360062E250 /* HCORM-DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,11 +132,12 @@
 		C9AABC3519C7DD350062E250 /* HCORM */ = {
 			isa = PBXGroup;
 			children = (
+				C94326FF19C8CAA300CBE4FD /* Models */,
+				C94326FE19C8CA9E00CBE4FD /* Views */,
+				C94326FD19C8CA9700CBE4FD /* Controllers */,
 				C9AABC5A19C7DD5C0062E250 /* FRFMDBHelpers */,
+				C94326FC19C8CA3E00CBE4FD /* HCORM */,
 				C9AABC3819C7DD350062E250 /* AppDelegate.swift */,
-				C9AABC3A19C7DD350062E250 /* MasterViewController.swift */,
-				C9AABC3C19C7DD350062E250 /* DetailViewController.swift */,
-				C9AABC3E19C7DD350062E250 /* Main.storyboard */,
 				C9AABC4119C7DD350062E250 /* Images.xcassets */,
 				C9AABC4319C7DD350062E250 /* LaunchScreen.xib */,
 				C9AABC3619C7DD350062E250 /* Supporting Files */,
@@ -143,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9AABC3219C7DD350062E250 /* HCORM */ = {
+		C9AABC3219C7DD350062E250 /* HCORM-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9AABC5419C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM" */;
+			buildConfigurationList = C9AABC5419C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM-Demo" */;
 			buildPhases = (
 				2F903BE52F034C99802E022C /* Check Pods Manifest.lock */,
 				C9AABC2F19C7DD350062E250 /* Sources */,
@@ -157,14 +195,14 @@
 			);
 			dependencies = (
 			);
-			name = HCORM;
+			name = "HCORM-Demo";
 			productName = HCORM;
-			productReference = C9AABC3319C7DD350062E250 /* HCORM.app */;
+			productReference = C9AABC3319C7DD350062E250 /* HCORM-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C9AABC4919C7DD360062E250 /* HCORMTests */ = {
+		C9AABC4919C7DD360062E250 /* HCORM-DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9AABC5719C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORMTests" */;
+			buildConfigurationList = C9AABC5719C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM-DemoTests" */;
 			buildPhases = (
 				C9AABC4619C7DD360062E250 /* Sources */,
 				C9AABC4719C7DD360062E250 /* Frameworks */,
@@ -175,9 +213,9 @@
 			dependencies = (
 				C9AABC4C19C7DD360062E250 /* PBXTargetDependency */,
 			);
-			name = HCORMTests;
+			name = "HCORM-DemoTests";
 			productName = HCORMTests;
-			productReference = C9AABC4A19C7DD360062E250 /* HCORMTests.xctest */;
+			productReference = C9AABC4A19C7DD360062E250 /* HCORM-DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C9AABC2E19C7DD350062E250 /* Build configuration list for PBXProject "HCORM" */;
+			buildConfigurationList = C9AABC2E19C7DD350062E250 /* Build configuration list for PBXProject "HCORM-Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -211,8 +249,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9AABC3219C7DD350062E250 /* HCORM */,
-				C9AABC4919C7DD360062E250 /* HCORMTests */,
+				C9AABC3219C7DD350062E250 /* HCORM-Demo */,
+				C9AABC4919C7DD360062E250 /* HCORM-DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C943270119C8CAD100CBE4FD /* HCORM.swift in Sources */,
 				C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */,
 				C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */,
+				C943270319C8CE6E00CBE4FD /* HCSettings.swift in Sources */,
 				C9B4415819C8170A00CEA4C9 /* FRFMDBHelpers.swift in Sources */,
 				C9AABC3919C7DD350062E250 /* AppDelegate.swift in Sources */,
 			);
@@ -295,7 +335,7 @@
 /* Begin PBXTargetDependency section */
 		C9AABC4C19C7DD360062E250 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C9AABC3219C7DD350062E250 /* HCORM */;
+			target = C9AABC3219C7DD350062E250 /* HCORM-Demo */;
 			targetProxy = C9AABC4B19C7DD360062E250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,7 +445,7 @@
 				INFOPLIST_FILE = HCORM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HCORM-Demo";
 			};
 			name = Debug;
 		};
@@ -417,7 +457,7 @@
 				INFOPLIST_FILE = HCORM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HCORM-Demo";
 			};
 			name = Release;
 		};
@@ -435,7 +475,7 @@
 				);
 				INFOPLIST_FILE = HCORMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HCORM-DemoTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCORM.app/HCORM";
 			};
 			name = Debug;
@@ -450,7 +490,7 @@
 				);
 				INFOPLIST_FILE = HCORMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HCORM-DemoTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCORM.app/HCORM";
 			};
 			name = Release;
@@ -458,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C9AABC2E19C7DD350062E250 /* Build configuration list for PBXProject "HCORM" */ = {
+		C9AABC2E19C7DD350062E250 /* Build configuration list for PBXProject "HCORM-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9AABC5219C7DD360062E250 /* Debug */,
@@ -467,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9AABC5419C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM" */ = {
+		C9AABC5419C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9AABC5519C7DD360062E250 /* Debug */,
@@ -476,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9AABC5719C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORMTests" */ = {
+		C9AABC5719C7DD360062E250 /* Build configuration list for PBXNativeTarget "HCORM-DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9AABC5819C7DD360062E250 /* Debug */,
