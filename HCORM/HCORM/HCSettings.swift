@@ -27,7 +27,7 @@ struct HCSettings {
     /**
      * Set database path
      * 
-     * @param databasePath String The database path.
+     * :param: databasePath String The database path.
      */
     static func setDatabasePath(databasePath: String)->Void {
         HCSettings.settings[HCSettings.DATABASE_PATH] = databasePath
@@ -36,7 +36,7 @@ struct HCSettings {
     /**
      * Get database path
      *
-     * @return The path of the database.
+     * :return: The path of the database.
      */
     static func databasePath()->String {
         return HCSettings.settings[HCSettings.DATABASE_PATH]!

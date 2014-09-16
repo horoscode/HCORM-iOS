@@ -19,7 +19,7 @@ class HCORM {
     /**
     * Init HCORM
     *
-    * @param databaseName String The name of the SQLite database. If you have "mydb.db" then insert "mydb"
+    * :param: databaseName String The name of the SQLite database. If you have "mydb.db" then insert "mydb"
     */
     class func initWithDatabaseName(databaseName: String)->Void {
         HCORM.initWithDatabaseName(databaseName, databaseExtension: "db")
@@ -28,11 +28,11 @@ class HCORM {
     /**
     * Init HCORM
     *
-    * @param databaseName String The name of the SQLite database. If you have "mydb.db" then insert "mydb"
-    * @param databaseExtension String Extension from your SQLite database. Usually "db" or "sqlite"
+    * :param: databaseName String The name of the SQLite database. If you have "mydb.db" then insert "mydb"
+    * :param: databaseExtension String Extension from your SQLite database. Usually "db" or "sqlite"
     */
     class func initWithDatabaseName(databaseName: String, databaseExtension: String)->Void {
-        HCSettings.setDatabasePath(FRFMDBHelpers.copyDatabaseToDocumentFolderWithDatabaseName(databaseName, databaseExtention: databaseExtension));
+        HCSettings.setDatabasePath(FRFMDBHelpers.copyDatabaseToDocumentFolderWithDatabaseName(databaseName, databaseExtension: databaseExtension));
     }
     
 }

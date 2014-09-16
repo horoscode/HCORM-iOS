@@ -10,6 +10,7 @@
 		BBC13055B7E94FC0AE02FE57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEAF159761045AFB4EC78A3 /* libPods.a */; };
 		C943270119C8CAD100CBE4FD /* HCORM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943270019C8CAD100CBE4FD /* HCORM.swift */; };
 		C943270319C8CE6E00CBE4FD /* HCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943270219C8CE6E00CBE4FD /* HCSettings.swift */; };
+		C943270519C8D46200CBE4FD /* HCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943270419C8D46200CBE4FD /* HCModel.swift */; };
 		C9AABC3919C7DD350062E250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3819C7DD350062E250 /* AppDelegate.swift */; };
 		C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3A19C7DD350062E250 /* MasterViewController.swift */; };
 		C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC3C19C7DD350062E250 /* DetailViewController.swift */; };
@@ -34,6 +35,8 @@
 		136D1A2C847441DC9DBC84ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C943270019C8CAD100CBE4FD /* HCORM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCORM.swift; path = HCORM/HCORM.swift; sourceTree = "<group>"; };
 		C943270219C8CE6E00CBE4FD /* HCSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCSettings.swift; path = HCORM/HCSettings.swift; sourceTree = "<group>"; };
+		C943270419C8D46200CBE4FD /* HCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCModel.swift; path = HCORM/HCModel.swift; sourceTree = "<group>"; };
+		C943270819C8D6D000CBE4FD /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		C9AABC3319C7DD350062E250 /* HCORM-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCORM-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AABC3719C7DD350062E250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AABC3819C7DD350062E250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		C94326FC19C8CA3E00CBE4FD /* HCORM */ = {
 			isa = PBXGroup;
 			children = (
+				C943270419C8D46200CBE4FD /* HCModel.swift */,
 				C943270019C8CAD100CBE4FD /* HCORM.swift */,
 				C943270219C8CE6E00CBE4FD /* HCSettings.swift */,
 			);
@@ -138,6 +142,7 @@
 				C9AABC5A19C7DD5C0062E250 /* FRFMDBHelpers */,
 				C94326FC19C8CA3E00CBE4FD /* HCORM */,
 				C9AABC3819C7DD350062E250 /* AppDelegate.swift */,
+				C943270819C8D6D000CBE4FD /* BridgingHeader.h */,
 				C9AABC4119C7DD350062E250 /* Images.xcassets */,
 				C9AABC4319C7DD350062E250 /* LaunchScreen.xib */,
 				C9AABC3619C7DD350062E250 /* Supporting Files */,
@@ -314,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C943270119C8CAD100CBE4FD /* HCORM.swift in Sources */,
+				C943270519C8D46200CBE4FD /* HCModel.swift in Sources */,
 				C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */,
 				C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */,
 				C943270319C8CE6E00CBE4FD /* HCSettings.swift in Sources */,
@@ -446,6 +452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "HCORM-Demo";
+				SWIFT_OBJC_BRIDGING_HEADER = "HCORM-Demo/BridgingHeader.h";
 			};
 			name = Debug;
 		};
@@ -458,6 +465,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "HCORM-Demo";
+				SWIFT_OBJC_BRIDGING_HEADER = "HCORM-Demo/BridgingHeader.h";
 			};
 			name = Release;
 		};

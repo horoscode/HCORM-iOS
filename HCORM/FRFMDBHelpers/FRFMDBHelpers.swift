@@ -8,12 +8,35 @@
 
 import Foundation
 
+/*************************************
+*
+* A simple class to copy your SQLite database to the Document folder, so we can access it.
+*
+*************************************/
+
 class FRFMDBHelpers {
     
-    class func copyDatabaseToDocumentFolderWithDatabaseName(databaseName: String, databaseExtention: String)->String {
-        return self.copyDatabaseToDocumentFolderWithDatabaseName(databaseName, databaseExtension: databaseExtention, databaseFolder: "")
+    /**
+     * Copy database file to document folder
+     * 
+     * :param: databaseName String Your database name
+     * :param: databaseExtension String Your database extension
+     *
+     * :return: Your database path
+     */
+    class func copyDatabaseToDocumentFolderWithDatabaseName(databaseName: String, databaseExtension: String)->String {
+        return self.copyDatabaseToDocumentFolderWithDatabaseName(databaseName, databaseExtension: databaseExtension, databaseFolder: "")
     }
     
+    /**
+    * Copy database file to document folder
+    *
+    * :param: databaseName String Your database name
+    * :param: databaseExtension String Your database extension
+    * :param: databaseFolder String This is the folder (Group) where your SQLite database is located
+    *
+    * :return: Your database path
+    */
     class func copyDatabaseToDocumentFolderWithDatabaseName(databaseName: String, databaseExtension: String, databaseFolder: String)->String {
         // Initialize variable
         var fileManager = NSFileManager.defaultManager()
