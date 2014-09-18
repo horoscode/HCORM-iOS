@@ -24,6 +24,12 @@ class MasterViewController: UITableViewController {
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
+        
+        // Testing HCORM
+        var books = Books()
+        books.Book_Id = "1"
+        books.Book_Name = "Macbook"
+        books.save()
     }
 
     override func didReceiveMemoryWarning() {
