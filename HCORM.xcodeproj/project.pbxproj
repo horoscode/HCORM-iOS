@@ -21,6 +21,7 @@
 		C9AABC4519C7DD350062E250 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AABC4319C7DD350062E250 /* LaunchScreen.xib */; };
 		C9AABC5119C7DD360062E250 /* HCORMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AABC5019C7DD360062E250 /* HCORMTests.swift */; };
 		C9B4415819C8170A00CEA4C9 /* FRFMDBHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B4415719C8170A00CEA4C9 /* FRFMDBHelpers.swift */; };
+		C9EF8C1619CCFA6E00D4458E /* HCDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF8C1519CCFA6E00D4458E /* HCDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C9AABC4F19C7DD360062E250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9AABC5019C7DD360062E250 /* HCORMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCORMTests.swift; sourceTree = "<group>"; };
 		C9B4415719C8170A00CEA4C9 /* FRFMDBHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRFMDBHelpers.swift; path = FRFMDBHelpers/FRFMDBHelpers.swift; sourceTree = "<group>"; };
+		C9EF8C1519CCFA6E00D4458E /* HCDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCDatabase.swift; path = HCORM/HCDatabase.swift; sourceTree = "<group>"; };
 		CAEAF159761045AFB4EC78A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		C94326FC19C8CA3E00CBE4FD /* HCORM */ = {
 			isa = PBXGroup;
 			children = (
+				C9EF8C1519CCFA6E00D4458E /* HCDatabase.swift */,
 				C943270419C8D46200CBE4FD /* HCModel.swift */,
 				C943270019C8CAD100CBE4FD /* HCORM.swift */,
 				C943270219C8CE6E00CBE4FD /* HCSettings.swift */,
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C943270119C8CAD100CBE4FD /* HCORM.swift in Sources */,
+				C9EF8C1619CCFA6E00D4458E /* HCDatabase.swift in Sources */,
 				C943270519C8D46200CBE4FD /* HCModel.swift in Sources */,
 				C9AABC3D19C7DD350062E250 /* DetailViewController.swift in Sources */,
 				C9AABC3B19C7DD350062E250 /* MasterViewController.swift in Sources */,

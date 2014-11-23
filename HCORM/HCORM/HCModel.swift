@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HCModel {
+class HCModel : NSObject {
     
     /*************************************
     *
@@ -16,8 +16,8 @@ class HCModel {
     *
     *************************************/
     
-    var primaryKey = "";
-    var tableName = "";
+    var primaryKey: String = "";
+    var tableName: String = "";
     
     /*************************************
     *
@@ -35,10 +35,17 @@ class HCModel {
         return true
     }
     
-    func all()->Array<AnyObject> {
-        var array = []
+    func all<T>()->Array<AnyObject> {
+        var database: FMDatabase = HCDatabase.initDatabase()
+        var resultSet: FMResultSet = database.executeQuery("SELECT * FROM \(tableName)", withArgumentsInArray: nil)
         
-        return array
+        var _objects: Array<T> = []
+        while (resultSet.next()) {
+            var _object = T.self;
+            
+        }
+        
+        return parseToArrayWithResultSet(resultSet)
     }
     
     func first()->Array<AnyObject> {
@@ -59,7 +66,7 @@ class HCModel {
         db.open()
         
         // Execute query
-        var result = db.executeUpdate("DELETE FROM ? WHERE ? = ?", withArgumentsInArray: [tableName, primaryKey, getPrimaryKeyValue()])
+        var result = db.executeUpdate("DELETE FROM ? WHERE ? = ?", withArgumentsInArray: [tableName, primaryKey, primaryKeyValue()])
         
         // Closing database
         db.close()
@@ -73,7 +80,13 @@ class HCModel {
     * Model Helpers
     *
     *************************************/
-    func getPrimaryKeyValue()->String {
+    
+    /**
+     * Get value of primary key
+     * 
+     * :return: String Value of primary key
+     */
+    func primaryKeyValue()->String {
         var reflection = reflect(self)
         var primaryKeyValue = ""
         
@@ -85,6 +98,28 @@ class HCModel {
         }
         
         return primaryKeyValue
+    }
+    
+    func parseToArrayWithResultSet(resultSet: FMResultSet)->Array<AnyObject> {
+        var result: Array = []
+        var reflection = reflect(self)
+        
+        while(resultSet.next()) {
+            var _model: AnyClass = self.dynamicType
+            
+            // Insert data into model
+            for var i=1; i<reflection.count; i++ {
+                var currentField = reflection[i].0
+                var value = resultSet.stringForColumn(currentField)
+                
+                // Set value on the variable
+                self.setValue(value, forKey: currentField)
+            }
+            
+            result.append(_model)
+        }
+        
+        return result
     }
     
 }

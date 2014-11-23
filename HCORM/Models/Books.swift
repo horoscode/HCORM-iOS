@@ -10,7 +10,7 @@ import Foundation
 
 class Books: HCModel {
     
-    var Book_Id = "";
-    var Book_Name = "";
+    var Book_Id = ""
+    var Book_Name = ""
     
 }

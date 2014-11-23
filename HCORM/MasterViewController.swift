@@ -30,6 +30,8 @@ class MasterViewController: UITableViewController {
         books.Book_Id = "1"
         books.Book_Name = "Macbook"
         books.save()
+        
+        books.all()
     }
 
     override func didReceiveMemoryWarning() {
